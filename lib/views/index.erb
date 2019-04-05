@@ -1,0 +1,9 @@
+<h1>MATTRESS BRANDS</h1>
+<%@brands.each do |brand|%>
+  <h2><%=brand.name%></h2>
+  <a href="/brands/<%=brand.id%>">See Brand</a>
+  <a href="/brands/<%=brand.id%>/edit">Edit Brand</a>
+  <a href="/brands/<%=brand.id%>/edit">Delete Brand</a>
+<%end%><br><br><br>
+
+<a href="/brands/new">ADD NEW MATTRESS</a>
